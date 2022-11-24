@@ -4,8 +4,8 @@ fun main()
 {
     do
     {
-        print("Введите путь до нужного файла или выйдете из программы введя - 2: ")    //C://address.csv
-        var wayToFile = readln()         //C://address.xml
+        print("Введите путь до нужного файла или выйдете из программы введя - 2: ")
+        var wayToFile = readln()
         if (wayToFile[wayToFile.length - 1] == '2')
             wayToFile = "2"
         if (wayToFile != "2")
@@ -14,7 +14,7 @@ fun main()
             val start = System.currentTimeMillis()
             val data = ReadFile(wayToFile)
             val process = ProcessingResults(data.listData)
-            process.printDuplicate()
+            process.printCopy()
             process.cityFloor()
             val end = System.currentTimeMillis()
             print("Было затрачено времени: ")
