@@ -21,8 +21,7 @@ class ProcessingResults(private val data: HashMap<Address, Int>)
                 5 -> countFloor[address.key.city]?.five = countFloor[address.key.city]?.five!! + tempForCounter
             }
         }
-        countFloor.forEach 
-        {
+        countFloor.forEach{
             println("\nКоличество домов в городе ${it.key}")
             println("Одноэтажных домов: ${it.value.one}")
             println("Двухэтажных домов: ${it.value.two}")
