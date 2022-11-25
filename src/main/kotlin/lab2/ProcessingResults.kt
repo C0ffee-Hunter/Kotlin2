@@ -1,13 +1,6 @@
 package lab2
 
 class ProcessingResults(private val data: HashMap<Address, Int>) {
-    fun printCopy()
-    {
-        data.forEach {
-            println("${it.key} повторений ${it.value}")
-        }
-    }
-
     fun counterFloor()
     {
         val countFloor = hashMapOf<String, CountFloor>()
