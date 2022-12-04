@@ -2,6 +2,14 @@ package lab2
 
 class ProcessingResults(private val data: HashMap<Address, Int>) 
 {
+    fun printDuplicateEntry() {
+        data.forEach {
+            if (it.value > 1) {
+                println("Адрес: ${it.key.city}, ${it.key.street}, ${it.key.house}, ${it.key.floor} Повторений ${it.value}")
+            }
+        }
+    }
+
     fun counterFloor()
     {
         val countFloor = hashMapOf<String, CountFloor>()
